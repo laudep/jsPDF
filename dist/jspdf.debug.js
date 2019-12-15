@@ -6,8 +6,8 @@
   /** @license
    *
    * jsPDF - PDF Document creation from JavaScript
-   * Version 1.5.3 Built on 2019-12-15T22:50:40.040Z
-   *                      CommitID f4fa8862a9
+   * Version 1.5.3 Built on 2019-12-15T22:57:40.805Z
+   *                      CommitID 1bd1e755ea
    *
    * Copyright (c) 2010-2018 James Hall <james@parall.ax>, https://github.com/MrRio/jsPDF
    *               2015-2018 yWorks GmbH, http://www.yworks.com
@@ -11789,39 +11789,6 @@
       }
 
       return result;
-    };
-  })(jsPDF.API);
-
-  /* global jsPDF, BmpDecoder, JPEGEncoder */
-
-  /**
-   * Copyright (c) 2018 Aras Abbasi 
-   *
-   * Licensed under the MIT License.
-   * http://opensource.org/licenses/mit-license
-   */
-
-  /**
-  * jsPDF bmp Support PlugIn
-  * @name bmp_support
-  * @module
-  */
-  (function (jsPDFAPI) {
-
-    jsPDFAPI.processBMP = function (imageData, index, alias, compression) {
-      var reader = new BmpDecoder(imageData, false);
-      var width = reader.width,
-          height = reader.height;
-      var qu = 100;
-      var pixels = reader.getData();
-      var rawImageData = {
-        data: pixels,
-        width: width,
-        height: height
-      };
-      var encoder = new JPEGEncoder(qu);
-      var data = encoder.encode(rawImageData, qu);
-      return jsPDFAPI.processJPEG.call(this, data, index, alias, compression);
     };
   })(jsPDF.API);
 
