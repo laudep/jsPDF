@@ -12,7 +12,7 @@ import './src/modules/cell';
 import './src/modules/context2d';
 import './src/modules/filters';
 import './src/modules/fileloading';
-import './src/modules/html';
+// import './src/modules/html';
 import './src/modules/javascript';
 import './src/modules/outline';
 import './src/modules/jpeg_support';
@@ -31,9 +31,9 @@ import './src/modules/xmp_metadata';
 import './src/modules/utf8';
 import './src/modules/vfs';
 
-import './src/deprecated/addhtml.js';
-import './src/deprecated/from_html.js';
-import './src/deprecated/html2pdf.js';
+// import './src/deprecated/addhtml.js';
+// import './src/deprecated/from_html.js';
+// import './src/deprecated/html2pdf.js';
 
 // import './src/libs/Blob.js';
 import './src/libs/omggif.js';
